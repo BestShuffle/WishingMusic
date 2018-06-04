@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-music-controls": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "fr.bestshuffle.wishingmusic"
+    }
+  },
+  "dependent_plugins": {}
+}
