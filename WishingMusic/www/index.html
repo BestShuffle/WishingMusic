@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags-->
+<meta charset="utf-8">
+<!--
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<meta http-equiv="Content-Security-Policy" />
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<!-- Your app title -->
+<title>Wishing Music</title>
+<!-- Path to Framework7 Library CSS, Material Theme -->
+<link rel="stylesheet"
+	href="lib/framework7/css/framework7.min.css">
+<link rel="stylesheet"
+	href="lib/framework7/css/framework7.md.min.css">
+<link rel="stylesheet"
+	href="lib/framework7/css/framework7.ios.min.css">
+
+<!-- 
+
+	CSS DE GENERATION D'ICONES
+
+	-->
+<link rel="stylesheet"
+	href="lib/framework7/css/wishingmusic-googleapi-icons.css">
+<link rel="stylesheet" href="css/wishingmusic.css">
+</head>
+
+<!-- <body class="theme-gray layout-dark"> -->
+<body>
+	<div class="views">
+		<!-- View principale -->
+		<div class="view view-main" data-url="index.html">
+
+			<!-- Barre de header -->
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="margin-auto">Wishing Music</div>
+				</div>
+			</div>
+
+			<!-- Barre de navigation -->
+			<div class="toolbar toolbar-bottom-md">
+				<div class="toolbar-inner">
+					<a href="/" class="link"><i class="icon material-icons">home</i></a>
+					<a href="/music/" class="link"><i class="icon material-icons">play_arrow</i></a>
+					<a href="/upload/" class="link"><i class="icon material-icons">cloud_upload</i></a>
+					<a href="/settings/" class="link"><i class="icon material-icons">settings</i></a>
+				</div>
+			</div>
+			<div class="pages navbar-fixed">
+				<div data-name="home" class="page">
+					<!-- Contenu de la page principale -->
+					<div class="page-content">
+						<div class="block">
+							<div class="block-title">Bibliothèque</div>
+							<div class="list">
+								<ul>
+									<li><a href="#" class="item-link item-content">
+											<div class="item-media">
+												<i class="icon material-icons">list</i>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Playlists</div>
+											</div>
+									</a></li>
+									<li><a href="/artists/" class="item-link item-content">
+											<div class="item-media">
+												<i class="icon material-icons">person</i>
+											</div>
+											<div class="item-inner">
+												<div class="item-title">Artistes</div>
+											</div>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="block">
+							<div class="block-title">Ajouts récents</div>
+							<div class="last-music-list list media-list">
+								<ul class="last-music-ul-list"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- Librairies -->
+	<script type="text/javascript" charset="utf-8"
+		src="lib/database/js/pouchdb.min.js"></script>
+<!-- 	<script type="text/javascript" charset="utf-8" -->
+<!-- 		src="lib/database/js/pouchdb.localstorage.min.js"></script> -->
+	<script type="text/javascript" charset="utf-8"
+		src="lib/database/js/pouchdb-adapter.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="lib/utils/js/blob-util.min.js"></script>
+<!-- 	<script type="text/javascript" charset="utf-8" -->
+<!-- 		src="lib/utils/js/socket.io.js"></script> -->
+	<script type="text/javascript" charset="utf-8"
+		src="lib/framework7/js/framework7.min.js"></script>
+	<!-- Wishing Music -->
+	<!-- Chargement des classes -->
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-displays.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-app.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-controllers.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-classes.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-functions.js"></script>
+	<script type="text/javascript" charset="utf-8"
+		src="js/wishingmusic-events.js"></script>
+</body>
+</html>
