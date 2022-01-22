@@ -1,2 +1,3 @@
-# wishing-music
-A Cordova music player
+# WishingMusic
+
+An old spotify like made at home.
