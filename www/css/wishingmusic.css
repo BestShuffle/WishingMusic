@@ -1,0 +1,213 @@
+/*
+ * Material design
+ */
+.material-icons.md-40 {font-size: 40px;}
+.material-icons.md-52 {font-size: 52px;}
+
+/*
+ *
+ */
+.margin-auto {
+	margin: auto;
+}
+
+/*
+ * Liste musiques
+ */
+.music-list {
+	margin-bottom: 64px!important;
+}
+.music-image {
+	width: 44px;
+	height: 25px;
+}
+/*
+ * Toolbar
+ */
+.toolbar-music {
+	margin-bottom: 48px;
+	/* !important pour écraser la valeur 48 par défaut de Framework7 */
+	height: 60px!important;
+}
+
+.toolbar-music>.thumbnail {
+	float: left;
+	width: 107px;
+	height: 60px;
+}
+
+.toolbar-music>.informations {
+	position: absolute;
+	/* 107px thumbnail + 102px button = 209px */
+	width: calc(100% - 209px);
+	left: 107px;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 60px;
+	vertical-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 640px) {
+	.toolbar-music>.informations {
+		margin-left: 10px;
+	}
+}
+
+.toolbar-music>.buttons {
+	float: right;
+	width: 102px;
+	height: 60px;
+}
+
+.toolbar-music>.buttons>.toolbar-button {
+	top: 30%;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+/*
+ * Music page 
+ */
+.music-page {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.music-page>.thumbnail {
+/* 	height: 45%; */
+/* 	width: 100%; */
+	margin: auto;
+/* 	margin-top: 10%; */
+/* 	margin-bottom: 10%; */
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-height: 200px;
+}
+
+.music-page>.position-duration-container>p {
+	margin: 0;
+	font-size: 11px;
+	color: #808080;
+}
+
+.music-page>.position-duration-container>.position-text {
+	float: left;
+}
+
+.music-page>.position-duration-container>.duration-text {
+	float: right;
+}
+
+.music-page>.informations {
+	width: 90%;
+/* 	margin: 5% auto 5% auto; */
+/* 	margin: 30px auto 30px auto; */
+	margin: 20px auto 20px auto;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.music-page>.controls {
+	display: block;
+/* 	margin-bottom: 30px!important; */
+	margin-bottom: 20px!important;
+}
+
+.music-page>.controls>.music-page-button {
+	cursor: pointer;
+}
+
+.music-page>.range-slider,
+.music-page>.position-range-container,
+.music-page>.position-duration-container,
+.music-page>.volume-container,
+.music-page>.controls {
+	margin: auto;
+	width: 75%;
+	max-width: 300px;
+}
+
+.button-active {
+	background-color: gray;
+	border-radius: 5px;
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+.music-page>.volume-container {
+	/* padding-left 16px + padding-right 16px */
+	width: 85%;
+	max-width: 350px;
+}
+
+.music-page>.range-slider>input[type=range],
+.music-page>.position-range-container>input[type=range] {
+	vertical-align: middle;
+	height: 25px;
+	margin: auto;
+	width: 100%;
+}
+
+.music-page>.range-slider>input[type=range]::-webkit-slider-thumb,
+.music-page>.position-range-container>input[type=range]::-webkit-slider-thumb {
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+}
+/* .music-page>.controls>.shuffle { */
+/* 	float: left; */
+/* } */
+/* .music-page>.controls>.repeat { */
+/* 	float: right; */
+/* } */
+
+/*
+ * Upload
+ */
+.downloading-zone {
+	/*     background-color: #E8E8E8; */
+	border: solid 1px gray;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 15px;
+	padding: 3px;
+}
+
+.state-zone {
+	/*     background-color: #E8E8E8; */
+	border: solid 1px gray;
+	border-radius: 5px;
+	text-align: justify;
+	margin-top: 15px;
+	padding: 5px;
+}
+
+/*
+ * Animations
+ */
+
+/*  Défilement */
+@media screen and (max-width: 640px) {
+	.marquee {
+	    white-space: nowrap;
+	    overflow: hidden;
+	    box-sizing: border-box;
+	}
+	
+	.marquee span {
+		display: inline-block;
+	    padding-left: 100%;
+	    text-indent: 0;
+	    animation: marquee 10s linear infinite;
+	}
+	
+	@keyframes marquee {
+	    0%   { transform: translate(0, 0); }
+	    100% { transform: translate(-100%, 0); }
+	}
+}
